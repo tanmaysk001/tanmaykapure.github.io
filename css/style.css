@@ -8519,7 +8519,7 @@ h1, h2, h3, h4, h5,
             width: 100%; }
             @media (min-width: 992px) {
               .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
-                position: absolute;
+                /* position: absolute;
                 top: 50%;
                 left: 0;
                 -webkit-transform: translateY(-50%);
@@ -8528,7 +8528,8 @@ h1, h2, h3, h4, h5,
                 right: 0;
                 max-width: 50%;
                 padding-left: 45px;
-                padding-right: 3em; } }
+                padding-right: 3em;  */
+              text-align: center;} }
         .owl-carousel.home-slider .slider-item .slider-text .subheading {
           color: #000000;
           font-weight: 600;
