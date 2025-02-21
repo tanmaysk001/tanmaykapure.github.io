@@ -159,10 +159,11 @@
 
 						// Create an array of typing text
 						const typingTexts = [
-						'Student  ',
+						'AI Engineer  ',
 						'Data Scientist   ',
 						'Data Analyst   ',
-						'Data Engineer  '
+						'Data Engineer  ',
+						'Student  '
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -214,7 +215,7 @@
 								<div class="row">
 									<div class="col-sm-6 col-md-5">
 									  <div class="about-img">
-										<img src="images/Profilepic.jpg" class="img-fluid rounded b-shadow-a" alt="">
+										<img src="images/linkedin.jpg" class="img-fluid rounded b-shadow-a" alt="">
 									  </div>
 									</div>
 									<!-- Details next to profile image -->
@@ -230,6 +231,18 @@
 
 								<div class="skill-mf">
 									<p class="title-s">Skills</p>
+									<span>LLM</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Agentic AI</span> <span class="pull-right">70%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
 									<span>SQL</span> <span class="pull-right">80%</span>
 									<div class="progress">
 										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="95" aria-valuemin="0"
@@ -284,10 +297,12 @@
 								<h1 class="big">About</h1>
 								<h2 class="mb-4">About Me</h2>
 								
-								<p>With experience from 3 internships in Data Science and multiple projects, I am a talented and skilled Data Scientist. 
-									Persuing my Master's Degree in Data Science with specialization in statistics at New Jersey Institute of Technology.
-									Proficient in data analysis, statistical analysis, data visualization, customer behaviour analysis, &amp; machine learning
-									Demonstrated success in leading impactful projects and providing effective mentorship.</p>
+								<p>I'm a dedicated and forward-thinking Data Scientist, currently pursuing my Master's in Data Science at NJIT, 
+									where I blend a robust academic foundation with hands-on industry experience. 
+									Through high-impact roles— including working on projects for reputed organizations like U.S Army and NASA
+									—I’ve consistently driven measurable improvements in efficiency and accuracy. My expertise spans advanced statistical modeling, machine learning, and data visualization, 
+									complemented by proficiency in cutting-edge tools like AWS, Transformers, and anomaly detection systems. Passionate about solving complex challenges, 
+									I thrive on turning large datasets into strategic solutions and leading multidisciplinary projects that push the boundaries of innovation.</p>
 								<ul class="about-info mt-4 px-md-0 px-2">
 									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
 									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, Physics &amp; Finance</span></li>
@@ -337,20 +352,36 @@
 		<br>
 		
 		<div class="row">
+
 				<div class="col-md-3.5">
 					<div class="resume-wrap ftco-animate">
-						<span class="date">Mar 2024 - Present</span>
-						<h2>Graduate Research Assistant </h2>
-						<span class="position"><a href="https://research.njit.edu/cstr/" target="_blank">Center of Solar and Terrestrial Research, NJIT</a></span>
-						<p class="mt-4">The CSTR is an international leader in solar and terrestrial physics, with interest in understanding the effects of the Sun on the geospace environment.
+						<span class="date">Oct 2024 - Present</span>
+						<h2>Modelling and Prediction Analyst (U.S ARMY Funded Research Project)</h2>
+						<span class="position"><a href="https://research.njit.edu/cstr/" target="_blank">New Jersey Institute of Technology</a></span>
+						<p class="mt-4">Worked with Senior Professors and Researchers of U.S Army to research and utlizie advanced methods to predict fatigue strength of Metals
 							<ul>
-								<li>Enhanced and analyzed 50000+ raw solar surface images using advanced image processing techniques.</li>
-								<li>Created more than 500 high-quality videos for research and educational purposes, providing valuable insights.</li>
-								<li>Collaborated with a multidisciplinary team of 15+ researchers to facilitate extraction of information from solar imagery.</li>
+								<li>Developed deep learning models to predict metal fatigue strength, incorporating advanced architectures like Transformers.</li>
+								<li>Improved prediction accuracy, reducing Mean Relative Error (MRE) from 140% to 60%. </li>
+								<li>Reviewed and implemented research papers, applying state-of-the-art deep learning techniques to fatigue strength prediction.</li>
 							</ul>
 						</p>
 					</div>
 
+				<div class="col-md-3.5">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Mar 2024 - Oct 2024</span>
+						<h2>Graduate Research Assistant (NASA and NSF Funded Project)</h2>
+						<span class="position"><a href="https://research.njit.edu/cstr/" target="_blank">Center of Solar and Terrestrial Research, NJIT</a></span>
+						<p class="mt-4">The CSTR is an international leader in solar and terrestrial physics, with interest in understanding the effects of the Sun on the geospace environment.
+							<ul>
+								<li>Enhanced and analyzed 50,000+ raw solar surface images using advanced image processing techniques.</li>
+								<li>Created more than 500 high-quality videos for research and educational purposes, providing valuable insights.</li>
+								<li>Collaborated with a multidisciplinary team of 15+ researchers to facilitate extraction of information from solar imagery.</li>
+								<li>Conducted software testing, debugging, and code integration for running ray tracing simulations parallelly on HPC cluster.</li>
+							</ul>
+						</p>
+					</div>
+				
 				</div>
 				<div class="col-md-3.5">
 					<div class="resume-wrap ftco-animate">
@@ -378,10 +409,10 @@
 						<span class="position"><a href="https://www.jubilantbiosys.com/" target="_blank">Jubilant Biosys Pvt Ltd</a></span>
 						<p class="mt-4">Jubilant Biosys is a Contract Research, Development and Manufacturing Organization in India providing comprehensive drug discovery and research services worldwide.
 							<ul>
-								<li>Worked on supply chain project to predict shipment prices with accuracy of 94% and presented it on a Streamlit
-									web app using AWS Sagemaker endpoint</li>
-								<li>Designed 5 dashboards for reporting insights using Tableau.</li>
-								<li>Defined 2 statistical modelling process for demand planning. Reported KPIs using Power BI and Excel Pivot Tables.</li>
+								<li>Optimized forecasting models (Random Forest, ARIMA) to 91% accuracy, reducing overstocking by 20% and understocking by 15%. </li>
+								<li>Designed 5 interactive dashboards in Tableau, increasing data visibility by 40% and enabling real-time KPI tracking.</li>
+								<li>Executed A/B testing to optimize inventory strategies, reducing stockouts by 10% and improving order fulfilment rates by 5%.</li>
+								<li>Partnered cross-functionally with Product, Engineering teams to integrate predictive models into the supply chain system.</li>
 							</ul>
 						</p>
 					</div>
@@ -391,13 +422,15 @@
 
 		<br>
 		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
+		
+		<div class="row justify-content-center text-center"></div>
+			<h2 class="big-4">Education</h2>
 			<div class="underline"></div>
 		</div>
 		<br>
+
 		
+		<div>
 			<div class="row">
     			<div class="col-md-6">
     				<div class="resume-wrap ftco-animate">
@@ -418,9 +451,9 @@
 				</div>
 			</div>
 
-    		<div class="row justify-content-center mt-5">
+    		<div class="row d-flex justify-content-center mt-5">
     			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="https://drive.google.com/file/d/1N3Nch6wvmvhMJJ3udqz0ytlO0yrxmQT0/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    				<p><a href="https://drive.google.com/file/d/1zIUtzoezm974RFavDy3kx-oA9peLshFX/view?usp=sharing" class="btn btn-primary py-4 px-5">Download CV</a></p>
     			</div>
     		</div>
     	</div>
@@ -611,7 +644,7 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1N3Nch6wvmvhMJJ3udqz0ytlO0yrxmQT0/view?usp=sharing">Download ⬇️</a></p>
+	            <p><a href="https://drive.google.com/file/d/1zIUtzoezm974RFavDy3kx-oA9peLshFX/view?usp=sharing">Download ⬇️</a></p>
 	          </div>
           </div>
 
