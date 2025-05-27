@@ -149,8 +149,7 @@
 						'AI Engineer  ',
 						'Data Scientist   ',
 						'Data Analyst   ',
-						'Data Engineer  ',
-						'Student  '
+						'Data Engineer  '
 						];
 
 						// Create a function to display the typing animation for a given text
@@ -159,14 +158,14 @@
 						for (let i = 0; i < text.length; i++) {
 							setTimeout(() => {
 							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
+							}, i * 100); // Increase the delay to slow down the typing animation
 						}
 
 						// Once the animation is complete, reset the text and start over
 						setTimeout(() => {
 							typingAnimationElement.textContent = '';
 							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
+						}, text.length * 100);
 						}
 
 						// Start the typing animation loop
