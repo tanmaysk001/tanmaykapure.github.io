@@ -97,6 +97,39 @@
   transform: scale(1.1);
 }
 
+/* Added styles for project images and cards */
+.project-card {
+  position: relative; /* Establishes a stacking context for z-index */
+}
+
+.project-card .blog-entry {
+  /* This is the main content box for each project (image + text) */
+  padding: 1rem; /* Adds internal padding around the content */
+  border-radius: 0.25rem; /* Optional: for slightly rounded corners */
+  width: 100%; /* Ensures it utilizes the column width */
+  background-color: #1a1a1a; /* Giving a dark background as seen in screenshots, adjust if your theme is different */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Make blog-entry fill the project-card height */
+}
+
+.project-card .block-20 {
+  display: block; /* Make the <a> tag behave like a block */
+  height: 200px;  /* Defines a fixed height for the image container. Adjust if you need a different aspect ratio. */
+  background-size: cover !important; /* Ensures the image covers the area, might crop slightly but won't distort/get cut awkwardly */
+  background-position: center !important; /* Centers the image within the container */
+  border-radius: 0.25rem; /* Optional: rounded corners for the image area */
+}
+
+.project-card .blog-entry .text {
+    margin-top: 1rem; /* Ensures consistent spacing between image and text */
+    flex-grow: 1; /* Allows text area to grow if blog-entry has extra space */
+}
+
+.project-card:hover {
+  z-index: 10; /* Brings the hovered card to the front to prevent its zoom effect from being overlapped by adjacent cards */
+}
+/* End of added styles */
 
 </style>
 
@@ -467,9 +500,42 @@
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are my personal projects on SQL, Python, Power BI & ML.</p>
+            <p>Below are my personal projects in Python, ML, Gen AI and Full Stack Development.</p>
           </div>
         </div>
+        <div class="row d-flex justify-content-center project-row-3">
+            <div class="col-md-4 d-flex project-card">
+                <div class="blog-entry justify-content-end">
+                <a href="https://huggingface.co/spaces/Tsk001/RAG_Gradio_App" class="block-20 zoom-effect" style="background-image: url('images/rag_chatbot.jpg');">
+                </a>
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading"><a href="https://huggingface.co/spaces/Tsk001/RAG_Gradio_App">RAG based AI Chatbot for Intelligent Document Retrieval</a></h3>
+                  <p>Built an end-to-end RAG system leveraging LangChain, FastAPI, and Pinecone, enabling context-aware responses from LLMs. Enhanced document processing & chunking using sentence transformers and made a Gradio webapp to interact with model. Orchestrated the webapp on Hugging Face Spaces with Docker & CI/CD, ensuring scalability & real-time query handling.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex project-card">
+                <div class="blog-entry justify-content-end">
+                <a href="https://github.com/tanmaysk001/Browser-Agent" class="block-20 zoom-effect" style="background-image: url('images/browser_agent.png');">
+                </a>
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading"><a href="https://github.com/tanmaysk001/Browser-Agent">Browser AI Agent</a></h3>
+                  <p>Created browser agent to navigate, extract info from web as per natural language instructions using Langgraph, Gemini, Playwright. Ability to bypass captcha, scrape websites, Human in the Loop feature to seamlessly fulfill browser tasks. Smart LLM assisted navigation to successfully handle dynamically changing web layouts.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 d-flex project-card">
+                <div class="blog-entry justify-content-end">
+                <a href="https://prep-wise-chi.vercel.app/" class="block-20 zoom-effect" style="background-image: url('images/voice_ai.png');">
+                </a>
+                <div class="text mt-3 float-right d-block">
+                  <h3 class="heading"><a href="https://prep-wise-chi.vercel.app/">Voice AI Interview Assistant</a></h3>
+                  <p>A full stack Voice AI based end to end web application agent to simulate mock interview using VAPI AI and Gemini API's. Intelligent Chatbot that gives feedback based on candidate's performance and helps them evaluate their preparation for Interviews. Responsive and beautiful frontend based on Next.js and Tailwind CSS, while PostgreSQL for database and Firebase for authentication, hosted on Vercel.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <br>
         <div class="row d-flex">
           <div class="col-md-4 d-flex project-card">
           	<div class="blog-entry justify-content-end">
